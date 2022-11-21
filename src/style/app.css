@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+.ballverde {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 50%;
+    filter: blur(100px);
+    top: 10%;
+    left: 5%;
+    z-index: -1;
+}
+
+
+.ballpurplu {
+    position: fixed;
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 500px;
+    height: 500px;
+    bottom: 10%;
+    right: -5%;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+}

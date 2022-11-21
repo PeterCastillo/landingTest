@@ -1,0 +1,140 @@
+.navContainer {
+    font-family: 'Inter', sans-serif;
+}
+.nav {
+    max-width: 1200px;
+    height: 80px;
+}
+.nav_logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+}
+.nav_logo_menu {
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+.nav_menu {
+    z-index: 25;
+    height: calc(100vh - 2rem);
+    top: 0;
+    max-width: 223px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    color: black;
+    left: 100%;
+    background-color: white;
+}
+
+.show_menu{
+    left: calc(100% - 223px);
+}
+
+.nav_menu_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 200px;   
+}
+
+.nav_menu_list_btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    width: max-content;
+}
+
+.nav_menu_list_element {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+.nav_menu_list_element:hover {
+    font-weight: bold;
+}
+.nav_menu_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-self: center;
+    width: 100%;
+}
+.nav_menu_btns_btn_singUp{
+    background: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    height: 40px;
+}
+
+.nav_menu_btns_btn_signIn {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem 0.6rem;
+    border: solid 2px white;
+    cursor: pointer;
+    height: 40px;
+}
+.logo_desktop {
+    display: none;
+}
+@media screen and (min-width:900px){
+    .nav_logo,
+    .nav_menu_list_btn {
+        display: none;
+    }
+    .logo_desktop {
+        display: block;
+        width: 216px;
+    }
+    .nav {
+        margin: auto;
+    }
+    .nav_menu {
+        position: static;
+        display: flex;
+        height: 80px;
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+        padding: 0rem 1rem;
+        background-color: transparent;
+    }
+    .nav_menu_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: max-content;
+        width: auto;
+        gap: 1.5rem;
+    }
+    .nav_menu_list_element {
+        font-weight: 100;
+        color: white;
+    }
+    .nav_menu_btns {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        max-width: max-content;
+    }
+    .nav_menu_btns_btn_signIn{
+        background-color: transparent;
+    }
+    .nav_menu_btns_btn_signIn,
+    .nav_menu_btns_btn_singUp {
+        width: 100px;
+    }
+}
